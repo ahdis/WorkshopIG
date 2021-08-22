@@ -43,7 +43,6 @@ Title: "Jane Doe"
 Description: "Example of a Patient"
 * name.family = "Doe"
 * name.given = "Jane"
-* extension[place-of-origin].valueAddress.line = "Leidensweg 10"
 * extension[place-of-origin].valueAddress.city = "Leidensdorf"
 * extension[place-of-origin].valueAddress.postalCode = "3333"
 * generalPractitioner = Reference(DoctorHelper)
