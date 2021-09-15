@@ -10,18 +10,15 @@ version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
+publisher:
+  name: My Organization
+  url: http://example.org/example-publisher
 
 # ----- Set more IG configuration -----
 title: "Workshop IG (R4)"
 description: An example IG for the workshop about authoring a FSH IG
 # https://www.hl7.org/fhir/valueset-spdx-license.html
 license: CC-BY-SA-4.0
-publisher:
-  name: HL7 Switzerland
-contact:
-  telecom:
-    system: url
-    value: https://www.hl7.ch
 
 # ----- Set dependencies -----
 dependencies:
@@ -30,15 +27,15 @@ dependencies:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# ----- Define IG tabs (page content) -----
 menu:
   Home: index.html
-# ----- Customize menu -----
   Use Case: 
     German: usecase-german.html
   Profiles: profiles.html
   Artifacts: artifacts.html
 
-# ----- Define own titles -----
+# ----- Define own titles (default: IG Publisher generates titles) -----
 pages:
   index.md:
     title: Home

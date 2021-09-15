@@ -1,10 +1,11 @@
-Profile: FishPatient
+// This is a simple example of a FSH file.
+// This file can be renamed, and additional FSH files can be added.
+// SUSHI will look for definitions in any file using the .fsh ending.
+Profile: MyPatient
 Parent: Patient
-Id: fish-patient
-Title: "Fish Patient"
-Description: "Profile for a fish patient"
+Description: "An example profile of the Patient resource."
+* name 1..* MS
 * generalPractitioner only Reference(FishDoctor)
-* generalPractitioner MS
 * extension contains FishSpecies named species 0..1
 
 
@@ -17,10 +18,11 @@ Description: "The species of the fish"
 * valueCodeableConcept from VSFishSpecies (extensible)
 
 
-Instance: Dory
-InstanceOf: FishPatient
-Usage: #example
-Title: "Dory"
-Description: "Poor Dory"
+Instance: PatientExample
+InstanceOf: MyPatient
+Description: "An example of a patient with a license to krill."
+* name
+  * given[0] = "James"
+  * family = "Pond"
 * generalPractitioner = Reference(DoctorShark)
 * extension[species].valueCodeableConcept = SCT#740008 "Ophichthus ophis"

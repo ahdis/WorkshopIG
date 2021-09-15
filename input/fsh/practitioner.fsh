@@ -2,17 +2,19 @@ Profile: FishDoctor
 Parent: ChCorePractitioner
 Id: fish-doctor
 Title: "Fish Doctor"
-Description: "Profile for a fish doctor"
+Description: "Profile of the Practitioner resource"
 * . ^short = "Fish doctor"
 * name 1..
-* name.family 1..
-* name.given 1..
+  * given 1..
+  * family 1..
 
 
 Instance: DoctorShark
 InstanceOf: FishDoctor
 Usage: #example
 Title: "Doctor Shark"
-Description: "The best doctor"
-* name.family = "Shark"
-* name.given = "Peter"
+Description: "Example of a Fish Doctor (Practitioner)"
+* name
+  * given[+] = "Peter"
+  * given[+] = "Fishbone"
+  * family = "Shark"
