@@ -1,5 +1,5 @@
 Profile: FishDoctor
-Parent: ChCorePractitioner
+Parent: $ChCorePractitioner
 Id: fish-doctor
 Title: "Fish Doctor"
 Description: "Profile of the Practitioner resource"
@@ -13,7 +13,7 @@ Instance: DoctorShark
 InstanceOf: FishDoctor
 Usage: #example
 Title: "Doctor Shark"
-Description: "Example of a Fish Doctor (Practitioner)"
+Description: "Example of a practitioner specialising as a fish doctor"
 * name
   * given[+] = "Peter"
   * given[+] = "Fishbone"

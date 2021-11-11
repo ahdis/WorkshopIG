@@ -2,8 +2,8 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: my.id
-canonical: http://myid.ch
+id: ch.myorganization.ig.workshop
+canonical: http://myorganization.ch/ig/workshop
 name: WorkshopIG
 status: draft
 version: 0.1.0
@@ -12,7 +12,7 @@ copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
   name: My Organization
-  url: http://example.org/example-publisher
+  url: http://myorganization.ch/kontakt
 
 # ----- Set more IG configuration -----
 title: "Workshop IG (R4)"
