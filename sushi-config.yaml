@@ -2,8 +2,8 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ch.myorganization.ig.workshop
-canonical: http://myorganization.ch/ig/workshop
+id: ch.myorganization.fhir
+canonical: http://myorganization.ch/fhir
 name: WorkshopIG
 status: draft
 version: 0.1.0
@@ -22,7 +22,7 @@ license: CC-BY-SA-4.0
 
 # ----- Set dependencies -----
 dependencies:
-  ch.fhir.ig.ch-core: 2.0.0
+  ch.fhir.ig.ch-core: 3.0.0
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
