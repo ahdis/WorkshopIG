@@ -16,8 +16,10 @@ Extension: FishSpecies
 Id: fish-species
 Title: "Fish Species"
 Description: "Extension to specify the species of the fish"
+Context: Patient
 * value[x] only CodeableConcept
-* valueCodeableConcept from FishSpecies (extensible)
+* value[x] 1..
+* value[x] from FishSpecies (extensible)
 
 
 Instance: PatientExample

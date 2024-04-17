@@ -22,7 +22,8 @@ license: CC-BY-SA-4.0
 
 # ----- Set dependencies -----
 dependencies:
-  ch.fhir.ig.ch-core: 3.0.0
+  ch.fhir.ig.ch-core: 4.0.1
+  hl7.terminology: 5.5.0
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -41,4 +42,4 @@ pages:
     title: Home
   usecase-german.md:
     title: Anwendungsfälle
-  profiles.xml:
+  profiles.md:

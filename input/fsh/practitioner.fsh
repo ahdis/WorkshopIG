@@ -1,5 +1,5 @@
 Profile: FishDoctor
-Parent: $ChCorePractitioner
+Parent: CHCorePractitioner // Computable Name - https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-practitioner.html
 Id: fish-doctor
 Title: "Fish Doctor"
 Description: "Profile of the Practitioner resource"
@@ -15,6 +15,6 @@ Usage: #example
 Title: "Doctor Shark"
 Description: "Example of a practitioner specialising as a fish doctor"
 * name
-  * given[+] = "Peter"
+  * given[0] = "Peter"
   * given[+] = "Fishbone"
   * family = "Shark"
